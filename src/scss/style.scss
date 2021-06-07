@@ -16,11 +16,9 @@
 @import "components/buttons";
 
 // 6- LAYOUTS
+@import "layout/grid";
 @import "layout/header";
 
 // 7- PAGES
 @import "pages/home";
 
-@import "variables";
-@import "global";
-@import "typography";
