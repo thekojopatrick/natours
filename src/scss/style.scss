@@ -1,6 +1,26 @@
+// 1- ABSTRACT
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// 2- BASE
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// 3- VENDORS
+// 4- THEME
+
+// 5- COMPONENTS
+@import "components/buttons";
+
+// 6- LAYOUTS
+@import "layout/header";
+
+// 7- PAGES
+@import "pages/home";
+
 @import "variables";
-@import "colors";
 @import "global";
 @import "typography";
-
-@import "header";
