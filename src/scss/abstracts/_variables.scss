@@ -10,6 +10,7 @@ $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
 $color-white: #ffffff;
 $color-black: #000000;
 
@@ -26,18 +27,18 @@ $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
 // Media Queries
-$mq-620-down: "only screen and (max-width: 620px)";
-$mq-620-up: "only screen and (min-width: 620px)";
+$mq-620-down: 'only screen and (max-width: 620px)';
+$mq-620-up: 'only screen and (min-width: 620px)';
 
-$mq-760-down: "only screen and (max-width: 759px)";
-$mq-760-up: "only screen and (min-width: 760px)";
+$mq-760-down: 'only screen and (max-width: 759px)';
+$mq-760-up: 'only screen and (min-width: 760px)';
 
-$mq-900-down: "only screen and (max-width: 899px)";
-$mq-900-up: "only screen and (min-width: 900px)";
+$mq-900-down: 'only screen and (max-width: 899px)';
+$mq-900-up: 'only screen and (min-width: 900px)';
 
-$mq-1000-down: "only screen and (max-width: 999px)";
-$mq-1000-up: "only screen and (min-width: 1000px)";
+$mq-1000-down: 'only screen and (max-width: 999px)';
+$mq-1000-up: 'only screen and (min-width: 1000px)';
 
-$mq-1180-up: "only screen and (min-width: 1180px)";
+$mq-1180-up: 'only screen and (min-width: 1180px)';
 
-$mq-1400-up: "only screen and (min-width: 1400px)";
+$mq-1400-up: 'only screen and (min-width: 1400px)';
