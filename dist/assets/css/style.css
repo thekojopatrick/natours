@@ -591,6 +591,134 @@ h3 {
 .row .col-3-of-4 {
 	width: calc(75% - 1.5rem);
 }
+.navigation__checkbox {
+	display: none;
+}
+.navigation__button {
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	height: 7rem;
+	position: fixed;
+	right: 6rem;
+	text-align: center;
+	top: 6rem;
+	width: 7rem;
+	z-index: 2000;
+}
+.navigation__background {
+	background-image: radial-gradient(#7ed56f, #28b485);
+	border-radius: 50%;
+	height: 6rem;
+	position: fixed;
+	right: 6.5rem;
+	top: 6.5rem;
+	_transition: transform 0.8s;
+	transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+	width: 6rem;
+	z-index: 1000;
+}
+.navigation__nav {
+	height: 100vh;
+	opacity: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+	width: 0;
+	z-index: 1500;
+}
+.navigation__list {
+	left: 50%;
+	list-style: none;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.navigation__item {
+	margin: 1rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+	background-image: linear-gradient(
+		120deg,
+		transparent,
+		transparent 50%,
+		#fff 0
+	);
+	background-size: 220%;
+	color: #fff;
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 300;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.4s;
+}
+.navigation__link:link span,
+.navigation__link:visited span {
+	display: inline-block;
+	margin-right: 1rem;
+}
+.navigation__link:active,
+.navigation__link:hover {
+	background-position: 100%;
+	color: #55c57a;
+	transform: translateX(1rem);
+}
+.navigation__checkbox:checked ~ .navigation__background {
+	transform: scale(100);
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+	opacity: 1;
+	width: 100%;
+}
+.navigation__icon {
+	margin-top: 3.5rem;
+	position: relative;
+}
+.navigation__icon,
+.navigation__icon:after,
+.navigation__icon:before {
+	background-color: #333;
+	display: inline-block;
+	height: 2px;
+	width: 3rem;
+}
+.navigation__icon:after,
+.navigation__icon:before {
+	content: '';
+	left: 0;
+	position: absolute;
+	transition: all 0.2s;
+}
+.navigation__icon:before {
+	top: -0.8rem;
+}
+.navigation__icon:after {
+	top: 0.8rem;
+}
+.navigation__button:hover .navigation__icon:before {
+	top: -1rem;
+}
+.navigation__button:hover .navigation__icon:after {
+	top: 1rem;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+	background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon:after {
+	top: 0;
+	transform: rotate(-135deg);
+}
 .header {
 	background-image: linear-gradient(
 			to right bottom,
