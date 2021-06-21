@@ -340,6 +340,11 @@ h3 {
 	text-align: center;
 	transition: all 0.3s;
 }
+@media (max-width: 900px) {
+	.feature-box {
+		padding: 2rem;
+	}
+}
 .feature-box__icon {
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -347,6 +352,11 @@ h3 {
 	color: transparent;
 	font-size: 6rem;
 	margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+	.feature-box__icon {
+		margin-bottom: 0;
+	}
 }
 .feature-box__title {
 	color: rgba(0, 0, 0, 0.7);
@@ -1063,7 +1073,7 @@ h3 {
 }
 @media (max-width: 900px) {
 	.section-features {
-		padding: 15rem 0;
+		padding: 10rem 0;
 	}
 }
 .section-tours {
