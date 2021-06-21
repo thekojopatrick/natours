@@ -41,6 +41,11 @@ h3 {
         font-weight: 400;
         letter-spacing: 3.5rem;
         animation: moveInLeft 1s ease-out;
+
+        @include responsive(phone) {
+            letter-spacing: 1rem;
+            font-size: 5rem;
+        }
     }
     &--sub {
         display: block;
@@ -48,6 +53,10 @@ h3 {
         font-weight: 700;
         letter-spacing: 1.74rem;
         animation: moveInRight 1s ease-out;
+
+        @include responsive(phone) {
+            letter-spacing: 0.5rem;
+        }
     }
 }
 
@@ -62,6 +71,14 @@ h3 {
     color: transparent;
     letter-spacing: 2px;
     transition: all 0.2s;
+
+    @include responsive(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include responsive(phone) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

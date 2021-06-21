@@ -31,13 +31,35 @@
 html {
 	font-size: 62.5%;
 }
+@media (max-width: 1200px) {
+	html {
+		font-size: 56.25%;
+	}
+}
+@media (max-width: 900px) {
+	html {
+		font-size: 50%;
+	}
+}
+@media (min-width: 1800px) {
+	html {
+		font-size: 75%;
+	}
+}
 body {
 	box-sizing: border-box;
+	padding: 3rem;
+}
+@media (max-width: 900px) {
+	body {
+		padding: 0;
+	}
+}
+body {
 	color: #777;
 	font-family: Lato, sans-serif;
 	font-weight: 400;
 	line-height: 1.7;
-	padding: 3rem;
 }
 h1 {
 	font-size: 2rem;
@@ -76,12 +98,23 @@ h3 {
 	font-weight: 400;
 	letter-spacing: 3.5rem;
 }
+@media (max-width: 600px) {
+	.heading-primary--main {
+		font-size: 5rem;
+		letter-spacing: 1rem;
+	}
+}
 .heading-primary--sub {
 	animation: moveInRight 1s ease-out;
 	display: block;
 	font-size: 2rem;
 	font-weight: 700;
 	letter-spacing: 1.74rem;
+}
+@media (max-width: 600px) {
+	.heading-primary--sub {
+		letter-spacing: 0.5rem;
+	}
 }
 .heading-secondary {
 	-webkit-background-clip: text;
@@ -94,6 +127,16 @@ h3 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	transition: all 0.2s;
+}
+@media (max-width: 900px) {
+	.heading-secondary {
+		font-size: 3rem;
+	}
+}
+@media (max-width: 600px) {
+	.heading-secondary {
+		font-size: 2.5rem;
+	}
 }
 .heading-secondary:hover {
 	text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -122,6 +165,11 @@ h3 {
 .u-margin-top-lg {
 	margin-top: 8rem !important;
 }
+@media (max-width: 900px) {
+	.u-margin-top-lg {
+		margin-top: 5rem !important;
+	}
+}
 .u-margin-top-xlg {
 	margin-top: 10rem !important;
 }
@@ -131,8 +179,18 @@ h3 {
 .u-margin-bottom-m {
 	margin-bottom: 4rem !important;
 }
+@media (max-width: 900px) {
+	.u-margin-bottom-m {
+		margin-bottom: 3rem !important;
+	}
+}
 .u-margin-bottom-lg {
 	margin-bottom: 8rem !important;
+}
+@media (max-width: 900px) {
+	.u-margin-bottom-lg {
+		margin-bottom: 5rem !important;
+	}
 }
 .composition {
 	position: relative;
@@ -146,17 +204,45 @@ h3 {
 	width: 55%;
 	z-index: 10;
 }
+@media (max-width: 900px) {
+	.composition__photo {
+		box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+		float: left;
+		position: relative;
+		width: 33.33%;
+	}
+}
 .composition__photo--p1 {
 	left: 0;
 	top: -2rem;
+}
+@media (max-width: 900px) {
+	.composition__photo--p1 {
+		top: 0;
+		transform: scale(1.2);
+	}
 }
 .composition__photo--p2 {
 	right: 0;
 	top: 2rem;
 }
+@media (max-width: 900px) {
+	.composition__photo--p2 {
+		top: -1rem;
+		transform: scale(1.3);
+		z-index: 100;
+	}
+}
 .composition__photo--p3 {
 	left: 20%;
 	top: 10rem;
+}
+@media (max-width: 900px) {
+	.composition__photo--p3 {
+		left: 0;
+		top: 1rem;
+		transform: scale(1.1);
+	}
 }
 .composition__photo:hover {
 	box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -641,6 +727,15 @@ h3 {
 .row:not(:last-child) {
 	margin-bottom: 8rem;
 }
+@media (max-width: 900px) {
+	.row:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+	.row {
+		max-width: 50rem;
+		padding: 0 3rem;
+	}
+}
 .row:after {
 	clear: both;
 	content: '';
@@ -652,6 +747,15 @@ h3 {
 }
 .row [class^='col-']:not(:last-child) {
 	margin-right: 6rem;
+}
+@media (max-width: 900px) {
+	.row [class^='col-']:not(:last-child) {
+		margin-bottom: 6rem;
+		margin-right: 0;
+	}
+	.row [class^='col-'] {
+		width: 100% !important;
+	}
 }
 .row .col-1-of-2 {
 	width: calc(50% - 3rem);
@@ -687,6 +791,18 @@ h3 {
 	width: 7rem;
 	z-index: 2000;
 }
+@media (max-width: 900px) {
+	.navigation__button {
+		right: 4rem;
+		top: 4rem;
+	}
+}
+@media (max-width: 600px) {
+	.navigation__button {
+		right: 3rem;
+		top: 3rem;
+	}
+}
 .navigation__background {
 	background-image: radial-gradient(#7ed56f, #28b485);
 	border-radius: 50%;
@@ -698,6 +814,18 @@ h3 {
 	transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 	width: 6rem;
 	z-index: 1000;
+}
+@media (max-width: 900px) {
+	.navigation__background {
+		right: 4.5rem;
+		top: 4.5rem;
+	}
+}
+@media (max-width: 600px) {
+	.navigation__background {
+		right: 3.5rem;
+		top: 3.5rem;
+	}
 }
 .navigation__nav {
 	height: 100vh;
@@ -808,9 +936,16 @@ h3 {
 		url(/assets/img/hero.jpg);
 	background-position: top;
 	background-size: cover;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 	height: 95vh;
 	position: relative;
+}
+@media (max-width: 600px) {
+	.header {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+	}
 }
 .header__logo-box {
 	left: 4rem;
@@ -834,9 +969,19 @@ h3 {
 	font-size: 1.4rem;
 	padding: 10rem 0;
 }
+@media (max-width: 900px) {
+	.footer {
+		padding: 8rem 0;
+	}
+}
 .footer__logo-box {
 	margin-bottom: 8rem;
 	text-align: center;
+}
+@media (max-width: 900px) {
+	.footer__logo-box {
+		margin-bottom: 6rem;
+	}
 }
 .footer__logo {
 	height: auto;
@@ -846,6 +991,12 @@ h3 {
 	border-top: 1px solid #777;
 	display: inline-block;
 	padding-top: 2rem;
+}
+@media (max-width: 900px) {
+	.footer__navigation {
+		text-align: center;
+		width: 100%;
+	}
 }
 .footer__list {
 	list-style: none;
@@ -878,10 +1029,21 @@ h3 {
 	padding-top: 2rem;
 	width: 80%;
 }
+@media (max-width: 900px) {
+	.footer__copyright {
+		float: none;
+		width: 100%;
+	}
+}
 .section-about {
 	background-color: #f7f7f7;
 	margin-top: -20vh;
 	padding: 20rem 0;
+}
+@media (max-width: 900px) {
+	.section-about {
+		padding: 20rem 0;
+	}
 }
 .section-features {
 	background-image: linear-gradient(
@@ -899,19 +1061,39 @@ h3 {
 .section-features > * {
 	transform: skewY(7deg);
 }
+@media (max-width: 900px) {
+	.section-features {
+		padding: 15rem 0;
+	}
+}
 .section-tours {
 	background-color: #f7f7f7;
 	margin-top: -10rem;
 	padding: 20rem 0 15rem;
+}
+@media (max-width: 900px) {
+	.section-tours {
+		_padding: 15rem 0 10rem 0;
+	}
 }
 .section-stories {
 	_background-color: #f7f7f7;
 	padding: 15rem 0;
 	position: relative;
 }
+@media (max-width: 900px) {
+	.section-stories {
+		padding: 10rem 0;
+	}
+}
 .section-book {
 	background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 	padding: 15rem 0;
+}
+@media (max-width: 900px) {
+	.section-book {
+		padding: 10rem 0;
+	}
 }
 .book {
 	background-image: linear-gradient(

@@ -10,6 +10,10 @@
 }
 .u-margin-top-lg {
 	margin-top: 8rem !important;
+
+	@include responsive(tab-port) {
+		margin-top: 5rem !important;
+	}
 }
 .u-margin-top-xlg {
 	margin-top: 10rem !important;
@@ -20,7 +24,15 @@
 }
 .u-margin-bottom-m {
 	margin-bottom: 4rem !important;
+
+	@include responsive(tab-port) {
+		margin-bottom: 3rem !important;
+	}
 }
 .u-margin-bottom-lg {
 	margin-bottom: 8rem !important;
+
+	@include responsive(tab-port) {
+		margin-bottom: 5rem !important;
+	}
 }
