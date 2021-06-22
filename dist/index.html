@@ -96,12 +96,20 @@
 					</div>
 					<div class="col-1-of-2">
 						<div class="composition">
-							<img src="assets/img/nat-1-large.jpg" alt="Photo 1"
+
+							<img src="assets/img/nat-1-large.jpg"
+								srcset="assets/img/nat-1.jpg 300w,assets/img/nat-1-large.jpg 1000w"
+								sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" alt="Photo 1"
 								class="composition__photo composition__photo--p1" />
-							<img src="assets/img/nat-2-large.jpg" alt="Photo 2"
+							<img src="assets/img/nat-2-large.jpg"
+								srcset="assets/img/nat-2.jpg 300w,assets/img/nat-2-large.jpg 1000w"
+								sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" alt="Photo 2"
 								class="composition__photo composition__photo--p2" />
-							<img src="assets/img/nat-3-large.jpg" alt="Photo 3"
+							<img src="assets/img/nat-3-large.jpg"
+								srcset="assets/img/nat-3.jpg 300w,assets/img/nat-3-large.jpg 1000w"
+								sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" alt="Photo 3"
 								class="composition__photo composition__photo--p3" />
+						
 						</div>
 					</div>
 				</div>
@@ -359,39 +367,44 @@
 
 		<footer class="footer">
 			<div class="footer__logo-box">
-				<img src="assets/img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
-			</div>
-			<div class="row">
-				<div class="col-1-of-2">
-					<div class="footer__navigation">
-						<ul class="footer__list">
-							<li class="footer__item">
-								<a href="" class="footer__link">Company</a>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">Contact us</a>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">Carrers</a>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">Privacy policy</a>
-							</li>
-							<li class="footer__item">
-								<a href="" class="footer__link">Terms</a>
-							</li>
-						</ul>
+				<picture class="footer__logo">
+					<source media="(max-width:600px )"
+						srcset="assets/img/logo-green-small-1x.png 1x, assets/img/logo-green-small-2x.png 2x">
+					<img src="assets/img/logo-green-2x.png"
+						srcset="assets/img/logo-green-1x.png 1x, assets/img/logo-green-2x.png 2x" alt="Full logo" />
+				</picture>
+
+				<div class="row">
+					<div class="col-1-of-2">
+						<div class="footer__navigation">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="" class="footer__link">Company</a>
+								</li>
+								<li class="footer__item">
+									<a href="" class="footer__link">Contact us</a>
+								</li>
+								<li class="footer__item">
+									<a href="" class="footer__link">Carrers</a>
+								</li>
+								<li class="footer__item">
+									<a href="" class="footer__link">Privacy policy</a>
+								</li>
+								<li class="footer__item">
+									<a href="" class="footer__link">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-of-2">
+						<p class="footer__copyright">
+							Built my <a href="#" class="footer__link">Jonas Schmedtmann</a>for
+							his online course
+							<a href="#" class="footer__link">Advanced CSS and Sass</a>.
+							Copyright &copy; by Jonas Schmedtmann.
+						</p>
 					</div>
 				</div>
-				<div class="col-1-of-2">
-					<p class="footer__copyright">
-						Built my <a href="#" class="footer__link">Jonas Schmedtmann</a>for
-						his online course
-						<a href="#" class="footer__link">Advanced CSS and Sass</a>.
-						Copyright &copy; by Jonas Schmedtmann.
-					</p>
-				</div>
-			</div>
 		</footer>
 
 		<div class="popup" id="popup">

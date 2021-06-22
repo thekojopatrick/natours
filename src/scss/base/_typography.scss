@@ -44,7 +44,7 @@ h3 {
 
 		@include responsive(phone) {
 			letter-spacing: 1rem;
-			font-size: 5rem;
+			font-size: 4rem;
 		}
 	}
 	&--sub {
@@ -57,6 +57,10 @@ h3 {
 		@include responsive(phone) {
 			letter-spacing: 0.5rem;
 		}
+	}
+
+	@include responsive(phone) {
+		margin-bottom: 4rem;
 	}
 }
 
