@@ -188,7 +188,7 @@
 		font-weight: 100;
 	}
 
-	@include responsive(tab-port) {
+	@media #{$mq-900-down},only screen and (hover:none) {
 		height: auto;
 		border-radius: 3px;
 		background-color: $color-white;
