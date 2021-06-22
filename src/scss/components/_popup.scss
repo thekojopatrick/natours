@@ -88,4 +88,39 @@
 			color: $color-primary;
 		}
 	}
+
+	@include responsive(tab-port) {
+		&__content {
+			@include absoluteCenter;
+			width: 75%;
+			height: 50rem;
+			background-color: $color-white;
+			box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+			border-radius: 3px;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			opacity: 0;
+			transform: translate(-50%, -50%) scale(0.25);
+			transition: all 0.5s 0.2s;
+		}
+
+		&__left {
+			width: 50%;
+			_float: left;
+			display: none;
+		}
+
+		&__right {
+			width: 100%;
+			_display: table-cell;
+			vertical-align: auto;
+			padding: 3rem 5rem;
+		}
+
+		&__text {
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+	}
 }
